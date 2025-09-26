@@ -33,7 +33,7 @@
 
 ## Ending 2
 **Criteria:** Attended LDOC (`yes`), `social_points >= 30`, `current_gpa < 3.5`  
-**Explanation:** You partied with friends but didn’t make the Dean's List due to slightly lower GPA.
+**Explanation:** You partied with friends but didn’t make the Dean's List due to a slightly lower GPA.
 
 ## Ending 3
 **Criteria:** Attended LDOC (`yes`), `social_points < 30`  
@@ -68,4 +68,4 @@
 ```bash
 python jdcooper4_assignment_4.py
 
-GPT-5 Mini was used to assist with code logic, such as if type(final_choice) is not str, debugging the commit process as it assisted me with understanding how to connect VS Code to git and ultimately get my commits to run, and assist with writing professional documentation for the game.
+GPT-5 Mini was used to assist with code logic, such as if type(final_choice) is not str, helping clarify the membership operator, debugging the commit process as it assisted me with understanding how to connect VS Code to git and ultimately get my commits to run, and assist with writing professional documentation for the game.
