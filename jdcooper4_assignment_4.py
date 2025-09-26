@@ -50,3 +50,32 @@ elif subject == "English":
     current_gpa += 0.1
     social_points += 10
     print("You choose to focus on studying English so your still a social butterfly")
+
+print("----LAST DAY OF SCHOOL----")
+final_choice = input("Are you attending LDOC?(yes/no)")
+if type(final_choice) is not str:
+    print("Error, final choice must be a string!")
+else:
+    if final_choice == "yes":
+        if social_points >= 30:
+            if current_gpa >= 3.5:
+                print("Ending 1: Congratulations, you studied hard, made the Dean's List, and were able to party with friends, have a great summer!")
+            else:
+                print("Ending 2: Enjoy the summer, you partied hard with friends but didn't make the Dean's List!")
+        else:
+            print("Ending 3: You attended LDOC but didn't enjoy yourself as you forgot to make friends this year!")
+    elif final_choice == "no":
+        if stress_level < 70:
+            if current_gpa >= 3.5:
+                print("Ending 4: You decided to stay inside and rest, but at least your hard work paid off and you made the Dean's List!")
+            else:
+                print("Ending 5: You stayed inside, missed out on memories, and didn't make the Dean's List , a triple whammy!")
+        else:
+            print("Ending 6: You were too stressed out this year and decided to skip LDOC!")
+    else:
+        print("Invalid input — choose lowercase yes or no!")
+
+print(f"Final GPA: {current_gpa}")
+print(f"Final Study Hours: {study_hours}")
+print(f"Final Social Points: {social_points}")
+print(f"Final Stress Level: {stress_level}")
