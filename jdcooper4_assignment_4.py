@@ -31,3 +31,22 @@ elif choice == "C":
     print("You choose choice C, enjoy your days now because I'm praying for you!")
 else:
     ("Print invalid input as choice A, B, C was not chosen")
+
+print("---WHAT ARE YOU STUDYING?")
+study_options = ["Programming", "Math", "English", "History"]
+subject = input("Choose a subject to focus on (Programming, Math, English, History): ")
+
+if subject not in study_options:
+     print("Specific subject was not chosen! Error")
+elif subject == "Programming":
+    current_gpa += 0.2
+    social_points -= 10
+    print("You choose to focus on studying Programming your gpa increase but your friends forgot about you! ")
+elif subject in ["Math", "History"]:
+    current_gpa += 0.2
+    social_points -= 7
+    print("You choose to focus on studying either Math or History so enjoy your gpa increase while losing a little bit of your social life!")
+elif subject == "English":
+    current_gpa += 0.1
+    social_points += 10
+    print("You choose to focus on studying English so your still a social butterfly")
